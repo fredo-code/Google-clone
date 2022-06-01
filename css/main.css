@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+header nav .nav-right-section {
+    width: 250px;
+    height: auto; /*se ajusta a la altura que definimos para el elemento padre <header>*/
+    display: flex;
+    list-style: none;
+    justify-content: center; /*justificar contenido al centro*/
+    align-items: center; /*alinear los elementos para que no se queden en la parte superior*/
+}
+
+nav .nav-right-section a {
+    margin-right: 10px; /*separar las etiquetas a*/
+    color: #000000;
+}
+
+nav .nav-right-section a:hover {
+    text-decoration: underline; /*al poner el cusor sobre elemeto, se subraya el texto*/
+}
+
+nav .nav-right-section .menu-icon {
+    background-image: url("https://static.thenounproject.com/png/756729-200.png"); /*imágen*/
+    background-repeat: no-repeat; /*con esta propidad mevitamos que se repita la imágen*/
+    background-position: center; /*centrar imágen*/
+    background-size: contain; /*aproximar la imágen al tamaño del contenedor*/
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+nav .nav-right-section img {
+    border-radius: 50%; /*redondear imagen*/
+    margin-left: 10px;
+    width: 35px;
+}
